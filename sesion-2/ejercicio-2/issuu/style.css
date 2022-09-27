@@ -1,0 +1,90 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: rgb(0, 153, 255);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(189, 185, 185, 0.616);
+}
+
+.logo-png {
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+header nav {
+    margin-top: -5px;
+    margin-right: 60px;   
+}
+
+main {
+    margin: 50px 150px;
+    margin-bottom: 70px;
+}
+
+.buttons a{
+    color: white;
+}
+
+#google-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(44, 118, 214);
+    border-radius: 5%;
+}
+
+#google-button img {
+    height: 25px;
+}
+
+#facebook-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(40, 65, 133);
+    border-radius: 5%;
+}
+
+#facebook-button img {
+    height: 25px;
+}
+
+#submit {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: darkgray;
+    height: 70px;
+    width: 300px;
+    background-color: transparent;
+    border-style: dashed;
+    border-radius: 60px;
+    border-color: darkgray;
+}
+
+footer {
+    display: flex;
+    padding-left: 60px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(189, 185, 185, 0.616);   
+}
+
+footer p {
+    margin-right: 50px;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#footer-nav a{
+    color:black;
+}
