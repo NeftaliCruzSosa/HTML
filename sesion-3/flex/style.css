@@ -34,6 +34,10 @@ a {
   color: rgb(50, 148, 115);
 }
 
+.orange {
+    color: rgb(209, 108, 25);
+  }
+
 .container {
   width: 1200px;
   max-width: 100%;
@@ -54,7 +58,7 @@ a {
 }
 
 .main-header {
-  padding: 15px 0px;
+  padding: 15px 0px 0;
 }
 
 .under-logo_first-ul {
@@ -161,4 +165,14 @@ span {
 
 .column-1_6 li {
     padding: 0.1rem;
+}
+
+.float-list {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 10.5%;
+    top: 5%;
+    font-size: 0.8rem;
+    color: black;
 }
