@@ -4,12 +4,15 @@ body {
   font-family: sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0%;
 }
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -24,6 +27,9 @@ a {
 
 .logo {
   font-size: 2rem;
+  width: 33%;
+  display: flex;
+  justify-content: center;
 }
 
 .light {
@@ -35,8 +41,8 @@ a {
 }
 
 .orange {
-    color: rgb(209, 108, 25);
-  }
+  color: rgb(209, 108, 25);
+}
 
 .container {
   width: 1200px;
@@ -54,16 +60,28 @@ a {
 
 .img-container {
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .main-header {
   padding: 15px 0px 0;
 }
 
+.left-menu {
+  width: 33%;
+}
+
+.under-logo {
+  justify-content: flex-end;
+}
+
 .under-logo_first-ul {
-  margin: 0 auto;
-  padding-left: 8%;
+  width: 33%;
+  text-align: center;
+}
+
+.under-logo_second-ul {
+  width: 33%;
+  text-align: end;
 }
 
 header li {
@@ -73,6 +91,11 @@ header li {
 .search-li {
   border-bottom: 0.1rem;
   border-bottom-style: solid;
+}
+.search-nav {
+  display: flex;
+  width: 33%;
+  justify-content: flex-end;
 }
 
 #search {
@@ -85,7 +108,9 @@ header li {
 }
 
 .main-img {
-  padding: 0.5rem;
+  min-width: 20%;
+  max-width: 20%;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,35 +169,35 @@ span {
 }
 
 .footer {
-    flex-direction: row !important;
-    justify-content:space-around;
-    align-items: flex-start;
+  flex-direction: row !important;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .column-1_6 {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 .column-1_6 img {
-    width: 0.8rem;
+  width: 0.8rem;
 }
 
 .column-1_6 ul {
-    padding: 0px;
+  padding: 0px;
 }
 
 .column-1_6 li {
-    padding: 0.1rem;
+  padding: 0.1rem;
 }
 
 .float-list {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    left: 10.5%;
-    top: 5%;
-    font-size: 0.8rem;
-    color: black;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  left: 160px;
+  top: 30px;
+  font-size: 0.8rem;
+  color: black;
 }
