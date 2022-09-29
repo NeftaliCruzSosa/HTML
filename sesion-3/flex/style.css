@@ -46,7 +46,6 @@ a {
 
 .container {
   width: 1200px;
-  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -59,7 +58,8 @@ a {
 }
 
 .img-container {
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-header {
@@ -108,9 +108,8 @@ header li {
 }
 
 .main-img {
-  min-width: 20%;
-  max-width: 20%;
-  padding: 1rem;
+  min-width: 25%;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
