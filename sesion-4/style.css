@@ -352,7 +352,9 @@ h3 {
 }
 
 .header {
+  margin: 0 auto;
   width: 100%;
+  max-width: 1200px;
   height: 600px;
   display: flex;
   justify-content: space-between;
@@ -413,7 +415,8 @@ h3 {
   justify-content: center;
   margin: 0.2rem 0;
 }
-.header__banner h2, .header__banner h3 {
+.header__banner h2,
+.header__banner h3 {
   font-weight: 600;
   padding: 2px 0;
 }
@@ -421,6 +424,34 @@ h3 {
 .main {
   margin: 0 auto;
   width: 70%;
+}
+.footer {
+  background-color: rgb(241, 241, 241);
+}
+.footer__copyright {
+  background-color: white;
+}
+.footer__copyright__wrapper {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.footer__copyright__wrapper span {
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+.footer__copyright__wrapper ul {
+  display: flex;
+  gap: 10px;
+}
+.footer__copyright__wrapper ul li {
+  font-size: 0.6rem;
+}
+.footer__copyright__wrapper ul li a {
+  color: #3058ef;
+  text-decoration: none;
 }
 
 .icon--search {
