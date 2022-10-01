@@ -1,0 +1,64 @@
+// SCSS Variables
+$layout_bp_mobile: 360px;
+$layout_bp_tablet: 800px;
+$layout_bp_desktop: 1280px;
+
+// SCSS Mixins
+@mixin tablet {
+  @media only screen and (min-width: #{$layout_bp_tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: #{$layout_bp_desktop}) {
+    @content;
+  }
+}
+
+.main {
+    border: 2x solid dodgerblue;
+
+    &__box {
+        background-color: bisque;
+        height: 100px;
+        width: 100px;
+
+        @include tablet {
+            width: 100%;
+        }
+
+        @include desktop {
+            width: 600px;
+        }
+
+    &--small {
+        font-size: 14px;
+        height: 50px;
+        width: 50px;
+    }
+
+    &--big {
+        font-size: 20px;
+        height: 150px;
+        width: 150px;
+
+        @include tablet {
+            font-size: 50px;
+        }
+
+        @include desktop {
+            font-size: 80px;
+        }
+    }
+
+    &--blue {
+        background-color: blue;
+    }
+
+    &--red {
+        background-color: red;
+    }
+
+    }
+}
