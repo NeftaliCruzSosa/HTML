@@ -425,8 +425,29 @@ h3 {
   margin: 0 auto;
   width: 70%;
 }
-.footer {
+.main__cards {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main__cards a {
+  text-decoration: none;
   background-color: rgb(241, 241, 241);
+  color: rgb(87, 85, 85);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 9px;
+  height: 85px;
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.2rem 0;
+}
+
+.footer {
+  background-color: rgb(226, 226, 226);
   padding-top: 3rem;
 }
 .footer__faqs {
@@ -490,4 +511,20 @@ h3 {
 .icon--location {
   height: 1rem;
   filter: invert(100%);
+}
+.icon--car {
+  height: 1.5rem;
+  padding-bottom: 0.7rem;
+}
+.icon--catalog {
+  height: 1.5rem;
+  padding-bottom: 0.7rem;
+}
+.icon--offer {
+  height: 1.5rem;
+  padding-bottom: 0.7rem;
+}
+.icon--contact {
+  height: 1.5rem;
+  padding-bottom: 0.7rem;
 }/*# sourceMappingURL=style.css.map */
