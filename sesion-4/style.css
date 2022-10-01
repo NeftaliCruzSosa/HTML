@@ -354,7 +354,7 @@ h3 {
 .header {
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   height: 600px;
   display: flex;
   justify-content: space-between;
@@ -425,6 +425,33 @@ h3 {
   margin: 0 auto;
   width: 70%;
 }
+.main__news {
+  display: flex;
+  justify-content: space-between;
+}
+.main__news__card {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.65rem;
+  border: solid 1px rgba(0, 0, 0, 0.137);
+}
+.main__news__card h2 {
+  padding: 0.4rem 0;
+  color: black;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.main__news__card span {
+  padding-bottom: 0.4rem;
+  font-size: 0.8rem;
+}
+.main__news__card a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 0.6rem;
+}
 .main__video {
   display: flex;
   justify-content: space-between;
@@ -444,7 +471,9 @@ h3 {
   font-weight: 600;
   font-size: 1.7rem;
 }
-.main__video__card span {
+.main__video__card a {
+  text-decoration: none;
+  color: black;
   font-weight: 600;
   font-size: 0.6rem;
 }
