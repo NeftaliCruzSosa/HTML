@@ -373,7 +373,7 @@ h3 {
   flex-direction: column;
   margin: 0 auto;
   width: 85%;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .header__nav {
@@ -404,7 +404,7 @@ h3 {
 }
 
 .header__banner a {
-  background-color: #3058ef;
+  background-color: #1C69D4;
   color: white;
   text-decoration: none;
   font-size: 9px;
@@ -424,6 +424,29 @@ h3 {
 .main {
   margin: 0 auto;
   width: 70%;
+}
+.main__video {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+.main__video__card {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.65rem;
+  border: solid 1px rgba(0, 0, 0, 0.137);
+}
+.main__video__card h2 {
+  padding: 0.4rem 0;
+  color: black;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.main__video__card span {
+  font-weight: 600;
+  font-size: 0.6rem;
 }
 .main__cards {
   padding-bottom: 2rem;
@@ -496,7 +519,7 @@ h3 {
   font-size: 0.6rem;
 }
 .footer__copyright__wrapper ul li a {
-  color: #3058ef;
+  color: #1C69D4;
   text-decoration: none;
 }
 
