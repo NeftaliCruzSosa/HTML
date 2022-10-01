@@ -448,6 +448,9 @@ h3 {
   font-weight: 600;
   font-size: 0.6rem;
 }
+.main__video__card iframe {
+  height: 215px;
+}
 .main__cards {
   padding-bottom: 2rem;
   display: flex;
