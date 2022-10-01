@@ -338,7 +338,9 @@ textarea {
 }
 
 body {
+  margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 1440px;
 }
 
 h2 {
@@ -354,7 +356,6 @@ h3 {
 .header {
   margin: 0 auto;
   width: 100%;
-  max-width: 1440px;
   height: 600px;
   display: flex;
   justify-content: space-between;
@@ -429,16 +430,22 @@ h3 {
   color: rgb(87, 85, 85);
   font-size: 0.8rem;
   font-weight: 600;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .main__series ul {
   display: flex;
   gap: 2rem;
+  align-items: flex-end;
+  padding: 0 1rem;
+  border-bottom: solid 2px rgba(226, 226, 226, 0.422);
 }
-.main__series ul :first-child li {
-  font-size: 100px;
+.main__series ul li:first-child {
+  font-size: 2rem;
+  color: black;
+  border-bottom: #1c69d4 solid 2px;
 }
 .main__series li {
+  padding-bottom: 1.2rem;
   list-style: none;
   font-weight: 600;
   color: rgb(180, 179, 179);
@@ -527,7 +534,7 @@ h3 {
   font-size: 0.6rem;
 }
 .main__video__card iframe {
-  height: 215px;
+  height: 100%;
 }
 .main__cards {
   padding-bottom: 2rem;
