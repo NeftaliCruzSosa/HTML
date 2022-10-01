@@ -427,6 +427,31 @@ h3 {
 }
 .footer {
   background-color: rgb(241, 241, 241);
+  padding-top: 3rem;
+}
+.footer__faqs {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px rgba(0, 0, 0, 0.137);
+  padding: 0 2rem;
+}
+.footer__faqs__column {
+  padding: 1.5rem 0;
+}
+.footer__faqs__column span {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.footer__faqs__column ul {
+  padding: 1rem 0;
+}
+.footer__faqs__column ul a {
+  text-decoration: none;
+  color: rgb(145, 143, 143);
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 .footer__copyright {
   background-color: white;
