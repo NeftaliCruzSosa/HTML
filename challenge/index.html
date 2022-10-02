@@ -1,19 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Slack Challenge</title>
-</head>
-<body>
-    <header class="main-header">
-        <div class="container">
-            <div class="logo">
+  </head>
+  <body>
+    <header>
+      <div class="header__wrapper">
+        <div class="header__wrapper--nav">
+          <div class="header__wrapper--nav__logo">
+            <img src="./img/slack-logo--white.svg" alt="" />
+          </div>
+          <div class="header__wrapper--nav__navbar">
+            <div class="header__wrapper--nav__navbar--left">
+              <ul>
+                <li class="dropdown">
+                  <a href="#">
+                    Producto
+                    <img class="icon--chevron" src="./img/icon--chevron--white.svg" alt="icon--chevron--white"/></a>
+                    <div class="dropdown-menu">
+                        <a href="#">Funciones</a>
+                        <a href="#">Canales</a>
+                        <a href="#">Sede digital</a>
+                        <a href="#">Integraciones</a>
+                        <a href="#">Seguridad</a>
+                        <a href="#">Slack Connect</a>
+                        <a href="#">Soluciones</a>
+                        <a href="#">Casos de clientes</a>
+                        <a href="#"><img src="./img/icon--download--black.svg" alt="icon--download--black"> Descargar Slack</a>
+                    </div>
+                </li>
+                <li><a href="#">Para las empresas</a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Precios</a></li>
+              </ul>
+            </div>
+            <div class="header__wrapper--nav__navbar--right">
+              <ul>
+                <li><a href="#">Conectarse</a></li>
+                <li>
+                  <a
+                    class="header__wrapper--nav__navbar--right--md-button"
+                    href="#"
+                    >HABLAR CON EL EQUIPO DE VENTAS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="header__wrapper--nav__navbar--right--rg-button"
+                    href="#"
+                    >PROBARLO GRATIS</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="header__wrapper--nav__navbar--hamburguer">
+                <input id="hamburguer-menu" type="checkbox">
+                <label class="hamburguer-menu-toggle" for="hamburguer-menu">
+                    <div class="header__wrapper--nav__navbar--hamburguer__icon"></div>
+                </label>
+            </div>
+          </div>
+        </div>
+        <div class="header__wrapper--main">
+            <div class="header__wrapper--main__left">
+                <div class="texts">
+                    <h1>Un buen trabajo en equipo comienza con una <span>sede digital</span></h1>
+                    <p>Reunir a todos tus compañeros, herramientas y comunicación en un mismo lugar te permitirá trabajar de manera más rápida y eficiente que nunca.</p>
+                </div>
+                <div class="buttons">
+                    <a href="#">REGISTRARSE CON CORREO</a>
+                    <a href="#"><img src="./img/icon--google.svg" alt="icon--google"> REGISTRARSE CON GOOGLE</a>
+                    <p>Slack puede probarse de forma gratuita durante el tiempo que se quiera</p>
+                </div>
                 
             </div>
+            <div class="header__wrapper--main__right">
+                <video autoplay loop>
+                    <source src = "./video/video--header.webm" type = "video/webm">
+                    This browser doesn't support video tag.
+                 </video>
+            </div>
         </div>
+      </div>
     </header>
-</body>
+  </body>
 </html>
