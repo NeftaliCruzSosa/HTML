@@ -291,10 +291,13 @@ body {
 
     p {
       padding: 0.5rem 0;
-      margin-right: 5.5rem;
       color: white;
       font-weight: 500;
       line-height: 1.5;
+
+      @include tablet{
+        margin-right: 5.5rem;
+      }
     }
 
     a {
@@ -308,6 +311,11 @@ body {
 
       .texts {
         padding: 2rem 0;
+        text-align: center;
+
+        @include tablet {
+            text-align: left;
+        }
       }
 
       .buttons {
@@ -376,4 +384,33 @@ body {
         align-items: center;
     }
   }
+}
+
+.sponsor__wrapper {
+    background-color: #F4EDE4;
+
+    &--logos {
+        padding: 3rem;
+        width: 80%;
+        max-width: 1010px;
+        margin: 0 auto;
+        h2 {
+            text-align: center;
+            padding-bottom: 2.5rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            img {
+                margin: 1rem;
+            }
+            @include tablet{
+                justify-content: space-around;
+            }
+        }
+    }
 }

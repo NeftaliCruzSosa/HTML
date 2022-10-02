@@ -573,10 +573,14 @@ body a {
 }
 .header__wrapper--main p {
   padding: 0.5rem 0;
-  margin-right: 5.5rem;
   color: white;
   font-weight: 500;
   line-height: 1.5;
+}
+@media only screen and (min-width: 1085px) {
+  .header__wrapper--main p {
+    margin-right: 5.5rem;
+  }
 }
 .header__wrapper--main a {
   color: white;
@@ -588,6 +592,12 @@ body a {
 }
 .header__wrapper--main__left .texts {
   padding: 2rem 0;
+  text-align: center;
+}
+@media only screen and (min-width: 1085px) {
+  .header__wrapper--main__left .texts {
+    text-align: left;
+  }
 }
 .header__wrapper--main__left .buttons {
   display: flex;
@@ -648,5 +658,35 @@ body a {
     grid-template-columns: 53% 45%;
     grid-column-gap: 2%;
     align-items: center;
+  }
+}
+
+.sponsor__wrapper {
+  background-color: #F4EDE4;
+}
+.sponsor__wrapper--logos {
+  padding: 3rem;
+  width: 80%;
+  max-width: 1010px;
+  margin: 0 auto;
+}
+.sponsor__wrapper--logos h2 {
+  text-align: center;
+  padding-bottom: 2.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.sponsor__wrapper--logos ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sponsor__wrapper--logos ul img {
+  margin: 1rem;
+}
+@media only screen and (min-width: 1085px) {
+  .sponsor__wrapper--logos ul {
+    justify-content: space-around;
   }
 }/*# sourceMappingURL=style.css.map */
