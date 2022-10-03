@@ -878,9 +878,6 @@ body a {
   }
 }
 
-.footer {
-  background-color: #F4EDE4;
-}
 .footer__wrapper {
   margin: 0 auto;
   width: 90%;
@@ -907,33 +904,69 @@ body a {
 .footer__wrapper__links a img:last-child {
   height: 0.3rem;
 }
-@media only screen and (min-width: 1085px) {
+@media only screen and (min-width: 768px) {
   .footer__wrapper__links {
     width: 95%;
     flex-direction: row;
     justify-content: space-between;
+    gap: 1rem;
   }
 }
 .footer__wrapper__links--left {
-  padding-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .footer__wrapper__links--left a:hover {
   filter: invert(41%) sepia(58%) saturate(555%) hue-rotate(163deg) brightness(93%) contrast(104%);
 }
-@media only screen and (min-width: 1085px) {
+.footer__wrapper__links--left a {
+  padding-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
   .footer__wrapper__links--left {
     padding: 0;
+    display: unset;
+    width: unset;
+    flex-direction: row;
   }
 }
-.footer__wrapper__links--right a:first-child {
+.footer__wrapper__links--right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer__wrapper__links--right .icon--download {
   padding-right: 0.5rem;
   color: #2777B4;
 }
-.footer__wrapper__links--right a:first-child:hover {
+.footer__wrapper__links--right .icon--download:hover {
   filter: none !important;
 }
-.footer__wrapper__links--right a:hover {
+.footer__wrapper__links--right__social {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__wrapper__links--right__social a:hover {
   filter: invert(41%) sepia(58%) saturate(555%) hue-rotate(163deg) brightness(93%) contrast(104%);
+}
+@media only screen and (min-width: 768px) {
+  .footer__wrapper__links--right__social {
+    display: block;
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__wrapper__links--right {
+    width: unset;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__wrapper__links {
+    flex-wrap: wrap;
+  }
 }
 .footer__wrapper__copyright {
   font-size: 0.7rem;
