@@ -615,15 +615,19 @@ body {
             font-size: 0.65rem;
             font-weight: 600;
             border-top: solid 1px black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             
             
             a{
                 margin-right: 0.5rem;
                 color: black;
                 
-                &:hover {
-                    filter: invert(41%) sepia(58%) saturate(555%) hue-rotate(163deg) brightness(93%) contrast(104%);
-                }
+                // &:hover {
+                //     filter: invert(41%) sepia(58%) saturate(555%) hue-rotate(163deg) brightness(93%) contrast(104%);
+                // }
     
                 img:first-child {
                     height: 1rem !important;
@@ -638,6 +642,35 @@ body {
 
             @include tablet {
                 width: 95%;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            &--left {
+                padding-bottom: 1rem;
+
+                a:hover {
+                        filter: invert(41%) sepia(58%) saturate(555%) hue-rotate(163deg) brightness(93%) contrast(104%);
+                }
+
+                @include tablet {
+                    padding: 0;
+                }
+            }
+
+            &--right {
+                a:first-child {
+                    padding-right: 0.5rem;
+                        color: #2777B4;
+                        &:hover {
+                            filter: none !important;
+                        }
+                    }
+                a {
+                    &:hover {
+                        filter: invert(41%) sepia(58%) saturate(555%) hue-rotate(163deg) brightness(93%) contrast(104%);
+                    }
+                }
             }
         }
         
