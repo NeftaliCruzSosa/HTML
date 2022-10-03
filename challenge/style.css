@@ -473,7 +473,7 @@ body a {
   font-size: 0.7rem;
   border: solid 1px white;
   border-radius: 3px;
-  transition-duration: 80ms;
+  transition-duration: 250ms;
 }
 .header__wrapper--nav__navbar--right--md-button:hover {
   box-shadow: inset 0px 0px 1px 1.5px #ffffff;
@@ -481,7 +481,6 @@ body a {
 @media only screen and (min-width: 1343px) {
   .header__wrapper--nav__navbar--right--md-button {
     display: inline;
-    color: aqua;
   }
 }
 .header__wrapper--nav__navbar--right--rg-button {
@@ -490,7 +489,7 @@ body a {
   background-color: white;
   border-radius: 3px;
   color: #541554 !important;
-  transition-duration: 80ms;
+  transition-duration: 250ms;
 }
 .header__wrapper--nav__navbar--right--rg-button:hover {
   box-shadow: inset 0px 0px 1px 1.5px #541554;
@@ -875,6 +874,92 @@ body a {
 @media only screen and (min-width: 768px) {
   .sponsor__wrapper__videos--third-img {
     display: none;
+  }
+}
+
+.shape {
+  position: relative;
+  border-radius: 0 0 50% 50%;
+  height: 19.5rem;
+}
+.shape__wrapper {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  height: 19.5rem;
+  background-color: #541554;
+  border-radius: 0 0 50% 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shape__wrapper h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .shape__wrapper h2 {
+    font-size: 2rem;
+  }
+}
+.shape__wrapper__text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+.shape__wrapper__buttons {
+  width: 90%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.shape__wrapper__buttons a {
+  text-align: center;
+  padding: 1.1rem 1rem;
+  width: 50%;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 768px) {
+  .shape__wrapper__buttons a {
+    padding: 1.1rem 5rem;
+  }
+}
+@media only screen and (min-width: 1085px) {
+  .shape__wrapper__buttons a {
+    width: unset;
+    padding: 1.1rem 2.5rem;
+  }
+}
+.shape__wrapper__buttons a:first-child {
+  color: #541554;
+  background-color: white;
+  transition-duration: 250ms;
+}
+.shape__wrapper__buttons a:first-child:hover {
+  box-shadow: inset 0px 0px 1px 1.5px #541554;
+}
+.shape__wrapper__buttons a:last-child {
+  color: white;
+  border: solid 1px white;
+  transition-duration: 250ms;
+}
+.shape__wrapper__buttons a:last-child:hover {
+  box-shadow: inset 0px 0px 1px 1.5px #ffffff;
+}
+@media only screen and (min-width: 1085px) {
+  .shape__wrapper__buttons {
+    flex-direction: unset;
   }
 }
 

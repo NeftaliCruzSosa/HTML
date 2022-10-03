@@ -176,14 +176,14 @@ body {
           font-size: 0.7rem;
           border: solid 1px white;
           border-radius: 3px;
-          transition-duration: 80ms;
+          transition-duration: 250ms;
+          
           &:hover {
             box-shadow: inset 0px 0px 1px 1.5px #ffffff;
           }
 
           @include desktop {
             display: inline;
-            color: aqua;
           }
         }
 
@@ -193,7 +193,8 @@ body {
           background-color: white;
           border-radius: 3px;
           color: #541554 !important;
-          transition-duration: 80ms;
+          transition-duration: 250ms;
+          
           &:hover {
             box-shadow: inset 0px 0px 1px 1.5px #541554;
           }
@@ -596,6 +597,97 @@ body {
                 @include mobile_portrait{
                     display: none;
                 }
+            }
+        }
+    }
+}
+
+.shape {
+    position: relative;
+    border-radius: 0 0 50% 50%;
+    height: 19.5rem;
+
+    &__wrapper {
+        position: absolute;
+        left: -10%;
+        right: -10%;
+        height: 19.5rem;
+        background-color: #541554;
+        border-radius: 0 0 50% 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 1rem;
+
+            @include mobile_portrait {
+                font-size: 2rem;
+            }
+        }
+
+        &__text {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+        }
+        
+        &__buttons {
+            width: 90%;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            
+            a {
+                text-align: center;
+                padding: 1.1rem 1rem;
+                width: 50%;
+                border-radius: 3px;
+                font-size: 0.9rem;
+                font-weight: 600;
+
+                @include mobile_portrait {
+                    padding: 1.1rem 5rem;
+                }
+
+                @include tablet {
+                    width: unset;
+                    padding: 1.1rem 2.5rem;
+                }
+            }
+
+            a:first-child {
+                color: #541554;
+                background-color: white;
+                transition-duration: 250ms;
+                
+                &:hover {
+                    box-shadow: inset 0px 0px 1px 1.5px #541554;
+                }
+            }
+
+            a:last-child {
+                color: white;
+                border: solid 1px white;
+                transition-duration: 250ms;
+                
+                &:hover {
+                    box-shadow: inset 0px 0px 1px 1.5px #ffffff;
+                }
+            }
+
+            @include tablet {
+                flex-direction: unset;
             }
         }
     }
