@@ -475,7 +475,7 @@ body {
                     font-weight: 600;
                     
                     &:hover {
-                        border-bottom: solid 2px #2777B4;
+                        text-decoration: underline;
                     }
                 }
 
@@ -528,7 +528,7 @@ body {
                     font-weight: 600;
                     
                     &:hover {
-                        border-bottom: solid 2px #2777B4;
+                        text-decoration: underline;
                     }
                 }
 
@@ -578,7 +578,7 @@ body {
                     font-weight: 600;
                     
                     &:hover {
-                        border-bottom: solid 2px #2777B4;
+                        text-decoration: underline;
                     }
                 }
 
@@ -608,13 +608,45 @@ body {
         margin: 0 auto;
         width: 90%;
         max-width: 1300px;
+
+        &__links {
+            margin: 0 auto;
+            padding: 2rem 0;
+            font-size: 0.65rem;
+            font-weight: 600;
+            border-top: solid 1px black;
+            
+            
+            a{
+                margin-right: 0.5rem;
+                color: black;
+                
+                &:hover {
+                    filter: invert(41%) sepia(58%) saturate(555%) hue-rotate(163deg) brightness(93%) contrast(104%);
+                }
+    
+                img:first-child {
+                    height: 1rem !important;
+                }
+            
+                img:last-child {
+                    height: 0.3rem;
+                }
+                
+
+            }
+
+            @include tablet {
+                width: 95%;
+            }
+        }
         
         &__copyright {
             font-size: 0.7rem;
             padding-bottom: 2rem;
 
             @include desktop {
-                padding: 2rem;
+                padding: 0 2rem 2rem 2rem;
             }
         }
     }
