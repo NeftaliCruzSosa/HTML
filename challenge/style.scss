@@ -600,3 +600,23 @@ body {
         }
     }
 }
+
+.footer {
+    background-color: #F4EDE4;
+
+    &__wrapper {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1300px;
+        
+        &__copyright {
+            font-size: 0.7rem;
+            padding-bottom: 2rem;
+
+            @include desktop {
+                padding: 2rem;
+            }
+        }
+    }
+}
+

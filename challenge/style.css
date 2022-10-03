@@ -876,4 +876,22 @@ body a {
   .sponsor__wrapper__videos--third-img {
     display: none;
   }
+}
+
+.footer {
+  background-color: #F4EDE4;
+}
+.footer__wrapper {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1300px;
+}
+.footer__wrapper__copyright {
+  font-size: 0.7rem;
+  padding-bottom: 2rem;
+}
+@media only screen and (min-width: 1343px) {
+  .footer__wrapper__copyright {
+    padding: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
