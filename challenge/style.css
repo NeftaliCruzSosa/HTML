@@ -760,7 +760,6 @@ body a {
 @media only screen and (min-width: 768px) {
   .sponsor__wrapper__videos--first-text {
     align-self: center;
-    padding: 1.5rem 0;
   }
 }
 .sponsor__wrapper__videos--first-img {
@@ -807,15 +806,9 @@ body a {
 .sponsor__wrapper__videos--second-text a:hover {
   border-bottom: solid 2px #2777B4;
 }
-@media only screen and (min-width: 1085px) {
-  .sponsor__wrapper__videos--second-text {
-    padding-left: 2rem;
-  }
-}
 @media only screen and (min-width: 768px) {
   .sponsor__wrapper__videos--second-text {
     align-self: center;
-    padding: 1.5rem 0;
   }
 }
 @media only screen and (min-width: 1085px) {
@@ -874,7 +867,6 @@ body a {
 @media only screen and (min-width: 768px) {
   .sponsor__wrapper__videos--third-text {
     align-self: center;
-    padding: 1.5rem 0;
   }
 }
 .sponsor__wrapper__videos--third-img {

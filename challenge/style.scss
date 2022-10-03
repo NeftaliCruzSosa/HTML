@@ -485,7 +485,6 @@ body {
 
                 @include mobile_portrait {
                     align-self: center;
-                    padding: 1.5rem 0;
                 }
             }
 
@@ -533,13 +532,8 @@ body {
                     }
                 }
 
-                @include tablet {
-                    padding-left: 2rem;
-                }
-
                 @include mobile_portrait {
                     align-self: center;
-                    padding: 1.5rem 0;
                 }
             }
             @include tablet {
@@ -594,7 +588,6 @@ body {
 
                 @include mobile_portrait {
                     align-self: center;
-                    padding: 1.5rem 0;
                 }
             }
 
