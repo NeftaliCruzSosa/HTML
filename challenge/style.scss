@@ -447,23 +447,29 @@ body {
         }
 
         &--first {
+            padding-bottom: 5rem;
             video {
-                width: 60%;
+                display: none;
 
                 @include desktop {
                     max-width: 650px;
-                    padding: 2rem;
+                    padding: 0 2rem;
                 }
 
                 @include tablet {
                     max-width: 48%;
                 }
+
+                @include mobile_portrait {
+                    width: 60%;
+                    display: inherit;
+                }
             }
             
             &-text {
-                align-self: center;
+                
                 max-width: 30rem;
-                padding: 1.5rem 0;
+                padding: 1.5rem 2rem;
                 a {
                     color:#2777B4;
                     font-weight: 600;
@@ -475,6 +481,127 @@ body {
 
                 @include tablet {
                     padding-right: 1rem;
+                }
+
+                @include mobile_portrait {
+                    align-self: center;
+                    padding: 1.5rem 0;
+                }
+            }
+
+            &-img {
+                display: inherit;
+                @include mobile_portrait{
+                    display: none;
+                }
+            }
+        }
+
+        &--second {
+            padding-bottom: 5rem;
+
+            video {
+                display: none;
+
+                @include desktop {
+                    max-width: 650px;
+                    padding: 0 2rem;
+                }
+
+                @include tablet {
+                    max-width: 48%;
+                }
+
+                @include mobile_portrait {
+                    width: 60%;
+                    align-self: flex-end;
+                    display: inherit;
+                }
+            }
+            
+            &-text {
+                align-self: flex-end;
+                max-width: 30rem;
+                padding: 1.5rem 2rem;
+                
+                a {
+                    color:#2777B4;
+                    font-weight: 600;
+                    
+                    &:hover {
+                        border-bottom: solid 2px #2777B4;
+                    }
+                }
+
+                @include tablet {
+                    padding-left: 2rem;
+                }
+
+                @include mobile_portrait {
+                    align-self: center;
+                    padding: 1.5rem 0;
+                }
+            }
+            @include tablet {
+                flex-direction: row-reverse;
+            }
+
+            &-img {
+                display: inherit;
+                align-self: flex-end;
+                @include mobile_portrait{
+                    display: none;
+                }
+            }
+        }
+
+        &--third {
+            padding-bottom: 5rem;
+            video {
+                display: none;
+
+                @include desktop {
+                    max-width: 650px;
+                    padding: 0 2rem;
+                }
+
+                @include tablet {
+                    max-width: 48%;
+                }
+
+                @include mobile_portrait {
+                    width: 60%;
+                    display: inherit;
+                }
+            }
+            
+            &-text {
+                
+                max-width: 30rem;
+                padding: 1.5rem 2rem;
+                a {
+                    color:#2777B4;
+                    font-weight: 600;
+                    
+                    &:hover {
+                        border-bottom: solid 2px #2777B4;
+                    }
+                }
+
+                @include tablet {
+                    padding-right: 1rem;
+                }
+
+                @include mobile_portrait {
+                    align-self: center;
+                    padding: 1.5rem 0;
+                }
+            }
+
+            &-img {
+                display: inherit;
+                @include mobile_portrait{
+                    display: none;
                 }
             }
         }
