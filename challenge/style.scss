@@ -413,4 +413,70 @@ body {
             }
         }
     }
+
+    &__videos {
+
+        &--first , &--second, &--third {
+        
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: 1.8rem;
+                font-weight: 700;
+                padding-bottom: 1.7rem;
+            }
+
+            p {
+                font-weight: 600;
+                line-height: 1.5;
+                padding-bottom: 1.7rem;
+            }
+        
+            @include desktop {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            @include tablet {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        &--first {
+            video {
+                width: 60%;
+
+                @include desktop {
+                    max-width: 650px;
+                    padding: 2rem;
+                }
+
+                @include tablet {
+                    max-width: 48%;
+                }
+            }
+            
+            &-text {
+                align-self: center;
+                max-width: 30rem;
+                padding: 1.5rem 0;
+                a {
+                    color:#2777B4;
+                    font-weight: 600;
+                    
+                    &:hover {
+                        border-bottom: solid 2px #2777B4;
+                    }
+                }
+
+                @include tablet {
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
 }
