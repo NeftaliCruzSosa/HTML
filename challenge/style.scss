@@ -608,6 +608,94 @@ body {
         width: 90%;
         max-width: 1300px;
 
+        &__faqs {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2rem 0;
+            
+            &--logo {
+                img {
+                    width: 54px;
+                }
+                padding-right: 9rem;
+                padding-bottom: 4rem;
+
+                @include mobile_portrait {
+                    padding-bottom: 0;
+                }
+            }
+
+            &--links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem 2rem;
+                padding-right: 1rem;
+                flex-direction: column;
+
+                &__wrapper {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    justify-content: space-between;
+
+                    h2 {
+                        font-size: 0.8rem;
+                        font-weight: 700;
+
+                        @include mobile_portrait{
+                            padding-bottom: 1rem;
+                        }
+                    }
+
+                    a {
+                        color: black;
+                        font-size: 0.8rem;
+                        font-weight: 500;
+
+                        &:hover {
+                            color: #1264a3;
+                        }
+                    }
+
+                    ul {
+                        display: none;
+
+                        @include mobile_portrait{
+                            display: unset;
+                        }
+                    }
+
+                    li {
+                        padding-bottom: 1rem;
+                    }
+
+                    img {
+                        height: 0.3rem;
+                        transform: rotate(270deg);
+
+                        @include mobile_portrait {
+                            display: none;
+                        }
+                    }
+
+                    @include mobile_portrait {
+                        flex-direction: column;
+                        align-items: unset;
+                        justify-content: unset;
+                    }
+                }
+
+                @include mobile_portrait {
+                    flex-direction: row;
+                }
+            }
+
+            @include mobile_portrait {
+                flex-direction: row;
+            }
+        }
+
         &__links {
             margin: 0 auto;
             padding: 2rem 0;
